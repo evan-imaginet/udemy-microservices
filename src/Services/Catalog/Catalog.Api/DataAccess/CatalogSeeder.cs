@@ -27,7 +27,7 @@ namespace Catalog.Api.DataAccess
             if (settings.Seed)
             {
                 // TODO: consider if this needs a different check, this method feels pretty immature
-                var hasProducts = collection.Find(x => true).Any();
+                var hasProducts = collection.Find(Builders<Product>.Filter.Empty).Any();
 
                 if (!hasProducts)
                 {

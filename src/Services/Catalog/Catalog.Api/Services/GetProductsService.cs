@@ -10,9 +10,9 @@ namespace Catalog.Api.Services
 {
     public class GetProductsService: IRequestHandler<GetProducts, IEnumerable<Product>>
     {
-        private readonly CatalogContext context;
+        private readonly ICatalogContext context;
 
-        public GetProductsService(CatalogContext context)
+        public GetProductsService(ICatalogContext context)
         {
             this.context = context;
         }

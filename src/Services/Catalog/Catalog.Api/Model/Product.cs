@@ -9,22 +9,22 @@ namespace Catalog.Api.Model
         [BsonRepresentation(BsonType.ObjectId)]
         public string Id { get; set; }
 
-        [BsonElement("name")]
+        [BsonElement("Name")]
         public string Name { get; set; }
 
-        [BsonElement("category")]
+        [BsonElement("Category")]
         public string Category { get; set; }
 
-        [BsonElement("summary")]
+        [BsonElement("Summary")]
         public string Summary { get; set; }
 
-        [BsonElement("description")]
+        [BsonElement("Description")]
         public string Description { get; set; }
 
-        [BsonElement("imageFile")]
+        [BsonElement("ImageFile")]
         public string ImageFile { get; set; }
 
-        [BsonElement("price")]
+        [BsonElement("Price")]
         public decimal Price { get; set; }
     }
 }
